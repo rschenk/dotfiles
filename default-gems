@@ -1,0 +1,7 @@
+bundler
+bundler-audit
+colored
+git-version-bump
+git_remote_branch
+github-auth
+hitch

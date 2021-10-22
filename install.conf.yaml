@@ -1,7 +1,16 @@
 - clean: ['~']
 
+- create:
+    - ~/.config
+
 - link:
     ~/.gitconfig: gitconfig
+    ~/.gitignore: gitignore
     ~/.tmux.conf: tmux.conf
+    ~/.default-gems: default-gems
+    ~/.config/nvim:
+        path: nvim
+        create: true
+
 
 

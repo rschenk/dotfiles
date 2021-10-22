@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/rschenk/Code/elixir/todo'
+let g:netrw_dirhist_1='/Users/rschenk/Code/elixir/todo/priv/static'
+let g:netrw_dirhist_0='/Users/rschenk/Code/elixir/todo/priv/repo/migrations'
+let g:netrw_dirhist_9='/Users/rschenk/Code/elixir/todo/priv/repo'
+let g:netrw_dirhist_8='/Users/rschenk/Code/elixir/todo/priv'
+let g:netrw_dirhist_7='/Users/rschenk/Code/elixir/todo'
+let g:netrw_dirhist_6='/Users/rschenk/Code/elixir/todo/lib'
+let g:netrw_dirhist_5='/Users/rschenk/Code/elixir/todo/lib/todo'
+let g:netrw_dirhist_4='/Users/rschenk/Code/elixir/todo/lib/todo/accounts'
+let g:netrw_dirhist_3='/Users/rschenk/Code/elixir/todo/lib/todo'
