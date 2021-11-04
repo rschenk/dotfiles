@@ -79,3 +79,11 @@ vim.cmd[[
   inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
   inoremap <S-Tab> <c-n>
 ]]
+
+-- Highlight yanked text
+vim.cmd[[
+  augroup LuaHighLight
+    au!
+    au TextYankPost * lua vim.highlight.on_yank()
+  augroup end
+]]
