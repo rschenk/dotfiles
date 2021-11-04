@@ -87,3 +87,12 @@ vim.cmd[[
     au TextYankPost * lua vim.highlight.on_yank()
   augroup end
 ]]
+
+-- Make the active pane more obvious by hiding the current line indicator on nonfocussed ones
+vim.cmd[[
+  augroup BgHighlight
+    autocmd!
+    autocmd WinEnter * set cul
+    autocmd WinLeave * set nocul
+  augroup END
+]]
