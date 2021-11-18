@@ -16,3 +16,6 @@ node_modules
 
 # Ctags
 tags
+
+# Per-project vim settings
+.lvimrc

@@ -19,14 +19,14 @@ require('nvim-treesitter.configs').setup {
 
 -- ## nvim-autopairs, configure to work like tpope/endwise
 local npairs = require('nvim-autopairs')
-npairs.setup()
+npairs.setup({ map_cr = false })
 
 -- clear all rule if you don't want to use autopairs
-npairs.clear_rules()
+-- npairs.clear_rules()
 
 -- make it work like endwise
-npairs.add_rules(require('nvim-autopairs.rules.endwise-ruby'))
-npairs.add_rules(require('nvim-autopairs.rules.endwise-elixir'))
+-- npairs.add_rules(require('nvim-autopairs.rules.endwise-ruby'))
+-- npairs.add_rules(require('nvim-autopairs.rules.endwise-elixir'))
 
 -- ## Telescope
 require('telescope').setup {
@@ -71,3 +71,8 @@ require('material').setup({
     comments = '#717CB4'
   }
 })
+
+-- ## localvimrc
+-- Make the decisions for local sourcing persistent over multiple vim runs and
+-- instances. 0 = never, 1 = store if answered in uppercase i.e. "Y", 2 = store all
+vim.g.localvimrc_persistent = 1

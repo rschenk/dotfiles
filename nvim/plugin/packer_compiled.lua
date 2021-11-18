@@ -72,95 +72,123 @@ _G.packer_plugins = {
   ["Comment.nvim"] = {
     config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/Comment.nvim"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
   },
   ["dash.nvim"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/dash.nvim"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/dash.nvim",
+    url = "https://github.com/mrjones2014/dash.nvim"
   },
   ["material.nvim"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/material.nvim"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
   },
   neoterm = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/neoterm"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/neoterm",
+    url = "https://github.com/kassio/neoterm"
   },
   ["nvim-autopairs"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/tokyonight.nvim"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-closer"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-closer"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-closer",
+    url = "https://github.com/9mm/vim-closer"
   },
   ["vim-eunuch"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-eunuch"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-eunuch",
+    url = "https://github.com/tpope/vim-eunuch"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-fugitive"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-localvimrc"] = {
+    loaded = true,
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-localvimrc",
+    url = "https://github.com/embear/vim-localvimrc"
   },
   ["vim-projectionist"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-projectionist"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-projectionist",
+    url = "https://github.com/tpope/vim-projectionist"
   },
   ["vim-rails"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-rails"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-rails",
+    url = "https://github.com/tpope/vim-rails"
   },
   ["vim-rake"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-rake"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-rake",
+    url = "https://github.com/tpope/vim-rake"
   },
   ["vim-repeat"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-repeat"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-repeat",
+    url = "https://github.com/tpope/vim-repeat"
   },
   ["vim-ripgrep"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-ripgrep"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-ripgrep",
+    url = "https://github.com/jremmen/vim-ripgrep"
   },
   ["vim-sensible"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-sensible"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-sensible",
+    url = "https://github.com/tpope/vim-sensible"
   },
   ["vim-surround"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-surround"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   },
   ["vim-test"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-test"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-test",
+    url = "https://github.com/vim-test/vim-test"
   },
   ["vim-unimpaired"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-unimpaired"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-unimpaired",
+    url = "https://github.com/tpope/vim-unimpaired"
   }
 }
 

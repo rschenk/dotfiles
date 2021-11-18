@@ -25,6 +25,7 @@ return require('packer').startup(function()
   use 'tpope/vim-unimpaired' -- pairs of commands that do stuff
   use 'vim-test/vim-test' -- test runner
   use 'kassio/neoterm' -- Easily re-use just one terminal window
+  use 'embear/vim-localvimrc' -- per-project vim config settings
 
   -- Smart and Powerful commenting
   use {
@@ -57,7 +58,12 @@ return require('packer').startup(function()
   -- Telescope plugin for faster fuzzy sorting
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   -- Dash.app support
-  use({ 'mrjones2014/dash.nvim', requires = { 'nvim-telescope/telescope.nvim' } })
+  use({
+    'mrjones2014/dash.nvim',
+    run = 'make install',
+  })
+
+
 
   -- Search for strings with ripgrep
   use 'jremmen/vim-ripgrep'
