@@ -6,6 +6,9 @@ require('nvim-treesitter.configs').setup {
   highlight = {
     enable = true,
 
+    -- At the moment, elixir performance is bad
+    disable = { "elixir", "heex" },
+
     -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
     -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
     -- Using this option will slow down your editor and you may see some duplicate highlights.
@@ -13,7 +16,8 @@ require('nvim-treesitter.configs').setup {
     --   Setting this to false will break tpope/vim-endwise, but it's worth it because
     --   regex highlighting for large ruby files is extremely slow.
     -- Instead of true it can also be a list of languages.
-    additional_vim_regex_highlighting = false
+    -- additional_vim_regex_highlighting = false
+    additional_vim_regex_highlighting = { "elixir", "heex" }
   }
 }
 
