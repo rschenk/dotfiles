@@ -1446,9 +1446,6 @@ macos_thicken_font 0.25
 #:     # Scroll the contents of the screen into the scrollback
 #:     map kitty_mod+f12 clear_terminal scroll active
 
-# Clears the terminal and redraws the prompt
-map cmd+k combine : clear_terminal scrollback active : send_text normal,application \x0c
-
 #: If you want to operate on all windows instead of just the current
 #: one, use all instead of active.
 
@@ -1513,6 +1510,6 @@ map cmd+k combine : clear_terminal scrollback active : send_text normal,applicat
 
 
 # BEGIN_KITTY_THEME
-# Tomorrow Night Eighties
+# Tomorrow Night
 include current-theme.conf
 # END_KITTY_THEME
