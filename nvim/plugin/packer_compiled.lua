@@ -57,7 +57,7 @@ end
 time([[Luarocks path setup]], false)
 time([[try_loadstring definition]], true)
 local function try_loadstring(s, component, name)
-  local success, result = pcall(loadstring(s))
+  local success, result = pcall(loadstring(s), name, _G.packer_plugins[name])
   if not success then
     vim.schedule(function()
       vim.api.nvim_notify('packer.nvim: Error running ' .. component .. ' for ' .. name .. ': ' .. result, vim.log.levels.ERROR, {})
@@ -95,6 +95,11 @@ _G.packer_plugins = {
     path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
   },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -125,10 +130,10 @@ _G.packer_plugins = {
     path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
-  ["vim-closer"] = {
+  ["vim-elixir"] = {
     loaded = true,
-    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-closer",
-    url = "https://github.com/9mm/vim-closer"
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-elixir",
+    url = "https://github.com/elixir-editors/vim-elixir"
   },
   ["vim-eunuch"] = {
     loaded = true,
@@ -144,6 +149,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-localvimrc",
     url = "https://github.com/embear/vim-localvimrc"
+  },
+  ["vim-mix-format"] = {
+    loaded = true,
+    path = "/Users/rschenk/.local/share/nvim/site/pack/packer/start/vim-mix-format",
+    url = "https://github.com/mhinz/vim-mix-format"
   },
   ["vim-projectionist"] = {
     loaded = true,

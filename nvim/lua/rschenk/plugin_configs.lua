@@ -19,35 +19,14 @@ require('nvim-treesitter.configs').setup {
 
 -- ## nvim-autopairs, configure to work like tpope/endwise
 local npairs = require('nvim-autopairs')
-npairs.setup({ map_cr = false })
+npairs.setup({ map_cr = true })
 
--- clear all rule if you don't want to use autopairs
+-- clear all rule if you don't want to use autopairs and just want to use endwise behavior below
 -- npairs.clear_rules()
 
 -- make it work like endwise
--- npairs.add_rules(require('nvim-autopairs.rules.endwise-ruby'))
--- npairs.add_rules(require('nvim-autopairs.rules.endwise-elixir'))
-
--- ## Telescope
-require('telescope').setup {
-  extensions = {
-    fzf = {
-      fuzzy = true,                    -- false will only do exact matching
-      override_generic_sorter = true,  -- override the generic sorter
-      override_file_sorter = true,     -- override the file sorter
-      case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
-                                       -- the default case_mode is "smart_case"
-    },
-    dash = {
-      file_type_keywords = {
-        ruby = { 'ruby', 'rails' }
-      }
-    }
-  }
-}
--- To get fzf loaded and working with telescope, you need to call
--- load_extension, somewhere after setup function:
-require('telescope').load_extension('fzf')
+npairs.add_rules(require('nvim-autopairs.rules.endwise-ruby'))
+npairs.add_rules(require('nvim-autopairs.rules.endwise-elixir'))
 
 -- ## vim-test
 vim.g['test#strategy'] = 'neoterm' -- 'neovim'
@@ -76,3 +55,7 @@ require('material').setup({
 -- Make the decisions for local sourcing persistent over multiple vim runs and
 -- instances. 0 = never, 1 = store if answered in uppercase i.e. "Y", 2 = store all
 vim.g.localvimrc_persistent = 1
+
+
+require 'rschenk.plugin_configs_telescope'
+require 'rschenk.plugin_configs_lsp'

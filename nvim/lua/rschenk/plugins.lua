@@ -9,9 +9,6 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- Simple plugins can be specified as strings
-  use '9mm/vim-closer'
-
   -- use 'tpope/vim-endwise' -- adds 'end' intelligently in ruby. Does not work w/ treesitter
   use 'windwp/nvim-autopairs' -- can be configured to work like endwise, works w/ treesitter
   use 'tpope/vim-eunuch' -- integration with unix commands
@@ -38,12 +35,11 @@ return require('packer').startup(function()
   -- Better, smarter, and much faster syntax highlighting
   use {
     "nvim-treesitter/nvim-treesitter",
-    branch = "0.5-compat", -- For nvim 0.5, not needed once 0.6 released
     run = ":TSUpdate",
   }
 
   -- -- LSP and friends
-  -- use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
+  use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
   -- use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   -- use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for LSP client
   -- use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
@@ -63,7 +59,9 @@ return require('packer').startup(function()
     run = 'make install',
   })
 
-
+  -- Elixir support (treesitter doesn't do well with Elixir)
+  use 'elixir-editors/vim-elixir'
+  use 'mhinz/vim-mix-format' -- mix format via :MixFormat
 
   -- Search for strings with ripgrep
   use 'jremmen/vim-ripgrep'

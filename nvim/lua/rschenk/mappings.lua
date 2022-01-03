@@ -42,23 +42,14 @@ map('v', '<Leader>P', '"+P', no_remap)
 map('n', '<CR>', ':noh<CR><CR>', no_remap)
 
 -- Code navigation with LSP
--- map('n', 'gd', ':lua vim.lsp.buf.definition()<CR>', no_remap)
--- map('n', 'gD', ':lua vim.lsp.buf.declaration()<CR>', no_remap)
--- map('n', 'gi', ':lua vim.lsp.buf.implementation()<CR>', no_remap)
--- map('n', 'gw', ':lua vim.lsp.buf.document_symbol()<CR>', no_remap)
--- map('n', 'gW', ':lua vim.lsp.buf.workspace_symbol()<CR>', no_remap)
--- map('n', 'gr', ':lua vim.lsp.buf.references()<CR>', no_remap)
--- map('n', 'gt', ':lua vim.lsp.buf.type_definition()<CR>', no_remap)
--- map('n', 'K', ':lua vim.lsp.buf.hover()<CR>', no_remap)
--- map('n', '<c-k>', ':lua vim.lsp.buf.signature_help()<CR>', no_remap)
--- map('n', '<leader>af', ':lua vim.lsp.buf.code_action()<CR>', no_remap)
--- map('n', '<leader>rn', ':lua vim.lsp.buf.rename()<CR>', no_remap)
+-- See plugin_configs_lsp.lua
 
 -- Telescope
 map('n', '<leader>ff', '<cmd>Telescope find_files<cr>', no_remap)
 map('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', no_remap)
 map('n', '<leader>fb', '<cmd>Telescope buffers<cr>', no_remap)
 map('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', no_remap)
+map('n', '<leader>fs', '<cmd>Telescope lsp_document_symbols<cr>', no_remap)
 
 -- Testing
 map('n', '<Leader>r', ':TestFile<CR>', { noremap = true, silent = true })
